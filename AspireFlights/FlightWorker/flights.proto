@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcFlights";
+
+package FlightApi;
+
+service Flight {
+  rpc GetFlight(FlightRequest) returns (FlightResponse) {}
+  rpc CreateFlight(CreateFlightRequest) returns (CreateFlightResponse) {}
+}
+
+message FlightRequest {
+  string id = 1;
+}
+
+message FlightResponse {
+  string id = 1;
+  string from = 2;
+  string to = 3;
+}
+
+message CreateFlightRequest {
+  string id = 1;
+  string departureCity = 2;
+  string arrivalCity = 3;
+}
+
+message CreateFlightResponse {
+  string id = 1;
+}

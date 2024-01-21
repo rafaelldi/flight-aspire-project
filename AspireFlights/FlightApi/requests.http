@@ -1,0 +1,13 @@
+### Get flight
+GET http://localhost:5239/flights/AAA
+Accept: application/json
+
+### Create flight
+POST http://localhost:5239/flights
+Content-Type: application/json
+
+{
+  "Id": "1",
+  "From": "ATL",
+  "To": "DEN"
+}
