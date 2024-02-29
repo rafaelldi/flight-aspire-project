@@ -8,6 +8,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightApi", "AspireFlights\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightWorker", "AspireFlights\FlightWorker\FlightWorker.csproj", "{5AC78651-3A80-44E8-B462-F4B33C903770}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6162ABA-8617-4C62-BD61-C68B7F80CAC9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		AspireFlights\FlightApi\requests.http = AspireFlights\FlightApi\requests.http
+		AspireFlights\FlightWorker\flights.proto = AspireFlights\FlightWorker\flights.proto
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
