@@ -38,7 +38,7 @@ namespace FlightWorker.Migrations
                     table.PrimaryKey("PK_Flights", x => x.Id);
                 });
 
-                        migrationBuilder.InsertData(
+            migrationBuilder.InsertData(
                 table: "Flights",
                 columns: new[] { "Id", "DepartureCity", "DepartureTime", "ArrivalCity", "ArrivalTime" },
                 values: new object[] { "AAA", "DFW", new DateTime(2023, 06, 04, 0, 0, 0, 0, DateTimeKind.Utc), "MUC", new DateTime(2023, 06, 05, 0, 0, 0, 0, DateTimeKind.Utc)});

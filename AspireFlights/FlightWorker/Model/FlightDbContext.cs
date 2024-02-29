@@ -2,8 +2,8 @@
 
 namespace FlightWorker.Model;
 
-public class FlightDbContext(DbContextOptions<FlightDbContext> options) : DbContext(options)
+public class FlightDbContext(DbContextOptions options) : DbContext(options)
 {
-    public DbSet<Flight> Flights { get; set; }
-    public DbSet<City> Cities { get; set; }
+    public DbSet<Flight> Flights => Set<Flight>();
+    public DbSet<City> Cities => Set<City>();
 }
